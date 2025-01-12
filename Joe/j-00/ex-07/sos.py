@@ -22,8 +22,8 @@ def main():
     res = ""
     for c in sys.argv[1]:
         assert c.upper() in NESTED_MORSE, "the arguments are bad"
-        res += NESTED_MORSE[c.upper()]
-        res += " "
+        res += f"{NESTED_MORSE[c.upper()]} "
+
     print(res)
 
 main()
